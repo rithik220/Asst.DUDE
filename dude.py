@@ -142,7 +142,7 @@ if __name__ == '__main__':
                         'numbers': contactNumber
                     }
                     headers = {
-                    'authorization': "nvpfrtJGwEURSLPXqegb5Kz68QyxDCN79kVdTmOIY3hcFBlis1tUBSQezunjK8LhHI0CdoMsxDVTYl1X",
+                    'authorization': " give dev api key here ",
                     'Content-Type': "application/x-www-form-urlencoded",
                     'Cache-Control': "no-cache",
                     }
@@ -166,7 +166,7 @@ if __name__ == '__main__':
                 mail = smtplib.SMTP('smtp.gmail.com', 587)
                 mail.ehlo()
                 mail.starttls()
-                mail.login('dudeasst.srgv@gmail.com', '19202223rgsv')
+                mail.login('dudeasst.srgv@gmail.com', 'type password')
                 mail.sendmail('dudeasst.srgv@gmail.com', name, content + ' -Asst. DUDE')
                 mail.close()
                 speak('Email has been sent successfuly. You can check your inbox.')
@@ -236,7 +236,7 @@ if __name__ == '__main__':
             speak('Searching...')
             try:
                 try:
-                    app_id = 'J3KPU2-YHYVP56Y68'
+                    app_id = 'J3KPU2-its half api'
                     client = wolframalpha.Client(app_id)
                     res = client.query(command)
                     answer = next(res.results).text
