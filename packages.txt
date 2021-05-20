@@ -1,0 +1,7 @@
+pyttsx3 - voice engine or can be said that it converts text to voice.
+SpeechRecognition - 
+gTTS - 
+pyaudio - 
+playsound - 
+pipwin - 
+yagmail - 
