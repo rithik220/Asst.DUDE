@@ -176,8 +176,59 @@ if __name__ == '__main__':
                 speak('sorry, couldn\'t process your mail.')
 
 
+                elif 'calculator' in command or 'help with math' in command:
+
+            speak(' hie there! Hey you want some math help now.')
+
+            def addition(a,b):
+                result=a+b
+                converted=str(result)
+                speak(converted)
+
+            def subtraction(a,b):
+                result=a-b
+                converted=str(result)
+                speak(converted)
+
+            def multiplication(a,b):
+                result=a*b
+                converted=str(result)
+                speak(converted)
+
+            def division(a,b):
+                result=a/b
+                converted=str(result)
+                speak(converted)
+
+            def mod(a,b):
+                result=a%b
+                converted=str(result)
+                speak(converted)
+
+            speak('Tell me  the operator please ')
+            operation = myCommand()
+            operator = operation
+            speak('tell me the first value. please do check the format of input should be like 10.0 or 10.9 float format ')
+            value1= myCommand()
+            a = float(value1)
+            speak('tell me the second value. please follow the instruction for input as before.')
+            value2 = myCommand()
+            b = float(value2)
 
 
+            if 'addition' in operation:
+                addition(a,b)
+            elif 'subtraction' in operation:
+                subtraction(a,b)
+            elif 'multiplication' in operation:
+                multiplication(a,b)
+            elif 'division' in operation:
+                division(a,b)
+            elif 'mod' in operation or 'remainder' in operation:
+                mod(a,b)
+            else:
+                speak('Invalid speak sorry')
+        
 
         elif 'news' in command:
             speak('please ask me in which news you are intrested to check now')
